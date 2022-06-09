@@ -1,0 +1,103 @@
+/* Box Model Fix */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0px;
+}
+
+/*  desktop - vw от макета 1920
+    tablet - от 768
+    mobile - от 320px   */
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Exo 2', sans-serif;
+}
+
+
+header {
+    padding: 6.77vw 12.5vw 15vw;
+    height: 47vw;
+    background-image: url(img/header_bgi.png);
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+
+header h2 {
+
+    font-weight: 400;
+    font-size: 1.46vw;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 6.25vw;
+    color: #FFFFFF;
+    position: relative;
+}
+
+header h1::after {
+    content: '';
+    width: 17.2vw;
+    height: 7.55vw;
+    border: 2px solid #FFFFFF;
+    transform: rotate(23.3deg);
+    position: absolute;
+    border-radius: 50%;
+    left: 24vw;
+    top: 0;
+    bottom: 0;
+}
+
+header p {
+    margin-top: auto;
+    font-weight: 400;
+    font-size: 2.60vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+@media (max-width:800px) {
+
+    header {
+        padding: 8.72vw 3.91vw 10.42vw 9vw;
+        height: 103.39vw;
+        background-image: url(img/header_bgi_small.png);
+    }
+
+    header h2 {
+        font-size: 3.91vw;
+    }
+
+    header h1{
+        font-size: 11.72vw
+    }
+
+    header h1::after{
+        width: 31.90vw;
+        height: 13.93vw;
+        left: 45vw;
+        top: 0;
+        bottom: 0;
+    }
+
+    header p{
+        align-self: flex-end;
+        text-align: center;
+        font-size: 3.91vw;
+    }
+}
