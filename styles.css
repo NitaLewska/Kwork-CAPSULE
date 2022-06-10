@@ -96,6 +96,7 @@ header p {
     background-repeat: no-repeat;
     margin-top: 1vw;
     padding-top: 1.1vw;
+    z-index: 2;
 }
 
 #dva_v_odnom>article:nth-of-type(1)::after{
@@ -106,6 +107,7 @@ header p {
     position: absolute;
     top: 1vw;
     right: -1vw;
+
 }
 
 #dva_v_odnom>article>h2{
@@ -115,22 +117,23 @@ header p {
     color: #796959;
 }
 
-#dva_v_odnom>article>h2::after {
+#dva_v_odnom>article>h2::before {
     content: '';
     width: 17.2vw;
     height: 7.55vw;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #ffffff;
     transform: rotate(23.3deg);
     position: absolute;
     border-radius: 50%;
+    z-index: -1;
 }
 
-#dva_v_odnom>article:nth-of-type(1)>h2::after {
+#dva_v_odnom>article:nth-of-type(1)>h2::before {
     left: 20vw;
     top: -0.5vw;
 }
 
-#dva_v_odnom>article:nth-of-type(2)>h2::after {
+#dva_v_odnom>article:nth-of-type(2)>h2::before {
     left: 7.8vw;
     top: -0.5vw;
 }
@@ -495,5 +498,93 @@ header p {
         align-self: flex-end;
         text-align: center;
         font-size: 3.91vw;
+    }
+
+    #heat {
+        height: 95vw;
+        z-index: 4;
+        margin-top: -12vw;
+        background: linear-gradient(0deg, rgba(255,220,188,1) 92%, rgba(0,0,0,0) 100%) ;
+        padding-top: 9.3vw;
+        padding-left: 4vw;
+    }
+
+    #heat article {
+        margin-left: 1.9vw;
+        padding: 5vw 10vw 2vw 3.5vw;
+        width: 63vw;
+        height: 52vw;
+    }
+
+    #heat article::after {
+        height: 67.97vw;
+        width: 92.84vw;
+        top: 21vw;
+        left: -6vw;
+        background-image: url(img/heat_small.png);
+    }
+
+    #heat article p {
+        margin-top: 1.9vw;
+        font-weight: 400;
+        font-size: 2.40vw;
+        color: #796959;
+    }
+}
+
+@media (max-width:400px) {
+    #care_one {
+        padding: 0 3vw;
+        display: flex;
+        flex-direction: column;
+        z-index: 4;
+        height: 74.48vw;
+        background: linear-gradient(180deg, rgba(255,220,188,1) 27.06%, #BB6C41 65.05%);
+    }
+    
+    #care_one h2{
+        font-weight: 400;
+        font-size: 5vw;
+        text-transform: uppercase;
+        color: #796959;
+        margin-left: 0;
+        padding-top: 0;
+        position: relative;
+    }
+    #care_one h2::before{
+        content:'';
+        height: 50.05vw;
+        width: 39.17vw;
+        position: absolute;
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-image: url(img/care_one_bgi.png);
+        top: 0;
+        left: -42vw;
+    }
+    #care_one p:nth-of-type(1) {
+        font-weight: 400;
+        font-size: 2.50vw;
+        text-transform: uppercase;
+        color: #796959;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+    #care_one p:nth-of-type(2) {
+        font-weight: 400;
+        font-size: 2.40vw;
+        color: #FFFFFF;
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+    }
+    
+    #care_one p:nth-of-type(3) {
+        font-weight: 400;
+        font-size: 2.40vw;
+        color: #FFFFFF;
+        margin-left: 0;
+        margin-top: 0;
     }
 }
