@@ -249,6 +249,7 @@ header p {
 
 
 #care_one {
+    z-index: 4;
     height: 74.48vw;
     background: linear-gradient(180deg, rgba(255,220,188,1) 27.06%, #BB6C41 65.05%);
 }
@@ -302,12 +303,30 @@ header p {
     font-size: 5vw;
     text-transform: uppercase;
     color: #E44E2B;
+    position: relative;
 }
-#functions h2+p{
 
+#functions h2::after{
+    content:'';
+    width: 54.69vw;
+    height: 54.69vw;
+    background-image: url(img/func_bgi.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    position: absolute;
+    top: -13vw;
+    right: -35vw;
+}
+
+#functions h2+p{
+    padding-top: 0.7vw;
+    font-size: 2.24vw;
+    text-transform: uppercase;
+    color: #E44E2B;
 }
 
 #functions article {
+    margin-top: 5.5vw;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -315,14 +334,61 @@ header p {
     height: 45vw;
     justify-content: flex-end;
 }
+
 #functions article p{
     width: 41.09vw;
     height: 5.73vw;
     font-weight: 400;
     font-size: 2.40vw;
     color: #796959;
-    margin-bottom: 3.13vw;  display: table-cell;
-    vertical-align: middle;
+    margin-bottom: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 7.29vw;
+    position: relative;
+}
+
+#functions article p::before{
+    content:'';
+    width:5.21vw;
+    height: 5.21vw;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+}
+
+#functions article p:nth-of-type(1):before{
+    background-image: url(img/func_1.png);
+}
+
+#functions article p:nth-of-type(2):before{
+    background-image: url(img/func_2.png);
+}
+
+#functions article p:nth-of-type(3):before{
+    background-image: url(img/func_3.png);
+}
+
+#functions article p:nth-of-type(4):before{
+    background-image: url(img/func_4.png);
+}
+
+#functions article p:nth-of-type(5):before{
+    background-image: url(img/func_5.png);
+}
+
+#functions article p:nth-of-type(6):before{
+    background-image: url(img/func_6.png);
+}
+
+#functions article p:nth-of-type(7):before{
+    background-image: url(img/func_7.png);
+}
+
+#functions article p:nth-of-type(8):before{
+    background-image: url(img/func_8.png);
 }
 
 
