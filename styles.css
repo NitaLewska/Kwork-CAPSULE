@@ -70,6 +70,90 @@ header p {
     color: #FFFFFF;
 }
 
+#dva_v_odnom {
+    z-index: 2;
+    margin-top: -5vw;
+    height: 79.27vw;
+    background: rgb(255,220,188);
+    background: linear-gradient(0deg, rgba(255,220,188,1) 94%, rgba(170,170,170,0) 100%);;
+    padding: 5vw 0 15vw 0 ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#dva_v_odnom>p {
+    font-weight: 400;
+    font-size: 8.85vw;
+    color: #E44E2B;
+    width: 100%;    
+    text-align: center;
+}
+
+#dva_v_odnom>article{
+    width: 49vw;
+    height: 51.04vw;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-top: 1.3vw;
+    padding-top: 1.2vw;
+}
+
+#dva_v_odnom>article:nth-of-type(1)::after{
+    content:'';
+    width: 4px;
+    height: 46.88vw;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 1vw;
+    right: -1vw;
+}
+
+#dva_v_odnom>article>h2{
+    font-weight: 700;
+    font-size: 3.65vw;
+    text-transform: uppercase;
+    color: #796959;
+}
+
+#dva_v_odnom>article:nth-of-type(1){
+    background-image: url(img/dva_v_odnom_1.png);
+    background-repeat: no-repeat;
+    background-position:bottom 2vw left;
+    background-size: 43.23vw 44.11vw
+
+}
+
+#dva_v_odnom>article:nth-of-type(1) h2{
+    margin-left: 18vw;
+}
+
+#dva_v_odnom>article:nth-of-type(2){
+    background-image: url(img/dva_v_odnom_2.png);  
+    background-position:top left 16vw;
+    background-size: 28.39vw 45.42vw;
+}
+
+#dva_v_odnom>article:nth-of-type(2) h2{
+    margin-left: 9vw;
+}
+
+#dva_v_odnom>article:nth-of-type(2) p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.60vw;
+    text-transform: uppercase;
+    color: #E6542F;
+    
+    margin-top: 34.3vw;
+    margin-left: 11vw;
+}
+
+
+#dva_v_odnom>article:nth-of-type(2) p span{
+    font-weight: 700;
+    font-size: 4.69vw;
+}
 
 @media (max-width:800px) {
 
