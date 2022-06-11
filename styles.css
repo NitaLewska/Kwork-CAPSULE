@@ -590,7 +590,7 @@ header p {
 
     #functions {
         height: 260vw;
-        margin-top: -12vw;
+        margin-top: -19vw;
         padding: 20vw 0 0 5vw;
         overflow-x: hidden;
     }
@@ -602,14 +602,14 @@ header p {
 
     #functions h2::after {
         content: '';
-        width: 110vw;
-        height: 110vw;
-        top: -5vw;
+        width: 112vw;
+        height: 112vw;
+        top: -14vw;
         right: -12vw;
     }
 
     #functions h2+p {
-        width: 90%;
+        width: 70%;
         padding-top: 3vw;
         font-size: 4.38vw;
     }
