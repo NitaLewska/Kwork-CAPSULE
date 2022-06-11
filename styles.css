@@ -542,7 +542,9 @@ header p {
 }
 
 @media (max-width:500px) {
-
+    #dva_v_odnom>article {
+        width: 47vw;
+    }
 
     #care_one {
         padding: 0 3vw;
