@@ -619,8 +619,8 @@ header p {
         margin-top: 75vw;
         width: 100%;
         flex-wrap: nowrap;
-        height: 45vw;
-        justify-content: stretch;
+        height: fit-content;
+        justify-content: unset;
     }
 
     #functions article p {
