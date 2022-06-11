@@ -532,59 +532,92 @@ header p {
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:500px) {
     #care_one {
         padding: 0 3vw;
         display: flex;
         flex-direction: column;
-        z-index: 4;
-        height: 74.48vw;
-        background: linear-gradient(180deg, rgba(255,220,188,1) 27.06%, #BB6C41 65.05%);
+        align-items:center;
+        height: 255vw;
     }
     
     #care_one h2{
-        font-weight: 400;
-        font-size: 5vw;
-        text-transform: uppercase;
-        color: #796959;
+        font-size: 7.50vw;
         margin-left: 0;
         padding-top: 0;
-        position: relative;
+        text-align: center;
     }
+
     #care_one h2::before{
         content:'';
-        height: 50.05vw;
-        width: 39.17vw;
-        position: absolute;
-        background-size:contain;
-        background-repeat:no-repeat;
-        background-image: url(img/care_one_bgi.png);
-        top: 0;
-        left: -42vw;
+        height: 111.88vw;
+        width: 87.81vw;
+        top: 75vw;
+        left: 5vw;
     }
+
     #care_one p:nth-of-type(1) {
-        font-weight: 400;
-        font-size: 2.50vw;
-        text-transform: uppercase;
-        color: #796959;
-        margin-left: 0;
-        margin-top: 0;
+        font-size: 3.75vw;
+        text-align: center;
     }
     
     #care_one p:nth-of-type(2) {
-        font-weight: 400;
-        font-size: 2.40vw;
-        color: #FFFFFF;
+        font-size: 4.38vw;
         margin-left: 0;
-        margin-top: 0;
-        width: 100%;
+        margin-top: 4vw;
+        width: 90%;
     }
     
     #care_one p:nth-of-type(3) {
-        font-weight: 400;
-        font-size: 2.40vw;
-        color: #FFFFFF;
+        font-size: 4.38vw;
         margin-left: 0;
-        margin-top: 0;
+        margin-top: 120vw;
+        width: 93%;
+    }
+
+    #functions {
+        height:260vw;
+        margin-top: -12vw;
+        padding: 20vw 0 0 5vw;
+        overflow-x: hidden;
+    }
+    
+    #functions h2{
+        width: 100%;
+        font-size: 7.50vw;
+    }
+    
+    #functions h2::after{
+        content:'';
+        width: 110vw;
+        height: 110vw;
+        top: -5vw;
+        right: -12vw;
+    }
+    
+    #functions h2+p{
+        width: 90%;
+        padding-top: 3vw;
+        font-size: 4.38vw;
+    }
+    
+    #functions article {
+        margin-top: 160vw;
+        width: 100%;
+        flex-wrap: nowrap;
+        height: 45vw;
+    }
+    
+    #functions article p{
+        width: 88.13vw;
+        height: 11.88vw;
+        font-size: 5vw;
+        margin-bottom: 6.5vw;
+        padding-left: 15vw;
+    }
+    
+    #functions article p::before{
+        width:11.88vw;
+        height: 11.88vw;
     }
 }
