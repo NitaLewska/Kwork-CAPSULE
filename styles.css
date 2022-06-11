@@ -321,7 +321,6 @@ header p {
     color: #796959;
 }
 
-
 #care_one {
     z-index: 4;
     height: 74.48vw;
@@ -617,10 +616,11 @@ header p {
     }
 
     #functions article {
-        margin-top: 160vw;
+        margin-top: 75vw;
         width: 100%;
         flex-wrap: nowrap;
         height: 45vw;
+        justify-content: unset;
     }
 
     #functions article p {
