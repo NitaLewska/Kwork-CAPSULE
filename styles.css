@@ -551,6 +551,7 @@ header p {
         flex-direction: column;
         align-items: center;
         height: 255vw;
+        background: linear-gradient(180deg, rgba(255, 220, 188, 1) 0, #BB6C41 95%);
     }
 
     #care_one h2 {
