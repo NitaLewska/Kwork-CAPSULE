@@ -590,9 +590,9 @@ header p {
     }
 
     #functions {
-        height: 260vw;
+        height: 265vw;
         margin-top: -19vw;
-        padding: 20vw 0 10vw 5vw;
+        padding: 20vw 0 0vw 5vw;
         overflow-x: hidden;
         overflow-y: hidden;
     }
