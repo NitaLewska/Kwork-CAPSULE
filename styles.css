@@ -165,8 +165,7 @@ header p {
     font-size: 2.60vw;
     text-transform: uppercase;
     color: #E6542F;
-    
-    margin-top: 34.3vw;
+    margin-top: 36.3vw;
     margin-left: 11vw;
 }
 
@@ -533,6 +532,8 @@ header p {
 }
 
 @media (max-width:500px) {
+
+
     #care_one {
         padding: 0 3vw;
         display: flex;
