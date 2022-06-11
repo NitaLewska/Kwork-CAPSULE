@@ -594,6 +594,7 @@ header p {
         margin-top: -19vw;
         padding: 20vw 0 0 5vw;
         overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     #functions h2 {
@@ -616,10 +617,10 @@ header p {
     }
 
     #functions article {
-        margin-top: 75vw;
+        margin-top: 65vw;
         width: 100%;
         flex-wrap: nowrap;
-        height: 60vw;
+        height: fit-content;
         justify-content: unset;
     }
 
