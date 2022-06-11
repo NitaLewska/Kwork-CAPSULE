@@ -620,7 +620,7 @@ header p {
         width: 100%;
         flex-wrap: nowrap;
         height: 45vw;
-        justify-content: unset;
+        justify-content: stretch;
     }
 
     #functions article p {
