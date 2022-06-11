@@ -619,7 +619,7 @@ header p {
         margin-top: 75vw;
         width: 100%;
         flex-wrap: nowrap;
-        height: fit-content;
+        height: 70vw;
         justify-content: unset;
     }
 
